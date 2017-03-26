@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Add report</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <form (submit)="add()">
+    <ion-list>
+      <ion-item>
+        <ion-label stacked>Title</ion-label>
+        <ion-input type="text" [value]="title" (change)="title = $event.target.value"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Description</ion-label>
+        <ion-textarea [value]="description" (change)="description = $event.target.value"></ion-textarea>
+      </ion-item>
+    </ion-list>
+
+    <button ion-button block>Add report</button>
+  </form>
+
+</ion-content>

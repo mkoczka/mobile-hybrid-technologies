@@ -21,6 +21,7 @@ Comparison of available hybrid technologies/frameworks for mobile app developmen
 - offline capability
 - communication with native components (camera, notifications, alert, confirm)
 - side menu
+- basic custom styling
 
 ## Test app pages
 - login
