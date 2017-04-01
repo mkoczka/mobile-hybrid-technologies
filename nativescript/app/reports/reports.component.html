@@ -1,0 +1,12 @@
+<StackLayout>
+  <Button class="btn btn-primary" text="ADD REPORT" (tap)="goToAdd()"></Button>
+
+  <ListView [items]="reports" class="list-group">
+    <ng-template let-item="item">
+      <StackLayout class="list-group-item">
+        <Label [text]="item.title" class="list-group-item-heading"></Label>
+        <Label [text]="item.description" class="list-group-item-text"></Label>
+      </StackLayout>
+    </ng-template>
+  </ListView>
+</StackLayout>

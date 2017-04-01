@@ -1,0 +1,18 @@
+<ActionBar title="Login" class="action-bar"></ActionBar>
+
+<StackLayout>
+  <StackLayout class="form p-10">
+    <StackLayout class="input-field">
+      <Label class="label" text="Email"></Label>
+      <TextField class="input" keyboardType="email" autocorrect="false" autocapitalizationType="none"></TextField>
+    </StackLayout>
+
+    <StackLayout class="input-field">
+      <Label class="label" text="Password"></Label>
+      <TextField class="input" secure="true"></TextField>
+    </StackLayout>
+  </StackLayout>
+
+  <Button class="btn btn-primary" text="Login" (tap)="login()"></Button>
+  <Button class="btn btn-orange" text="Register" (tap)="goToRegister()"></Button>
+</StackLayout>
